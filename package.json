@@ -22,6 +22,7 @@
     "packager": "node scripts/packager.js",
     "postinstall": "electron-rebuild",
     "start": "electron .",
+    "version": "electron --version",
     "test": "echo \"Error: no test specified\" && exit 1",
     "winsetup": "node scripts/winsetup.js"
   },
@@ -58,8 +59,7 @@
     "request": "2.82.0",
     "rimraf": "2.6.1",
     "salvator": "0.2.0",
-    "simple-virtual-dom": "0.1.9",
-    "spellchecker": "3.7.0"
+    "simple-virtual-dom": "0.1.9"
   },
   "devDependencies": {
     "commander": "2.9.0",

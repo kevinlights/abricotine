@@ -10,8 +10,9 @@ var constants = require.main.require("./constants"),
     langmap = require("langmap"),
     Menu = require("electron").Menu,
     pathModule = require("path"),
-    spellchecker = require('spellchecker'),
-    sysDictionaries = spellchecker.getAvailableDictionaries();
+    // spellchecker = require('spellchecker'),
+    // sysDictionaries = spellchecker.getAvailableDictionaries();
+    sysDictionaries = [];
 
 function getConfig (config, key) {
     if (config && typeof config.get === "function") {

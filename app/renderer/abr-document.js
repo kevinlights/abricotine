@@ -19,7 +19,7 @@ var remote = require("electron").remote,
     parsePath = require("parse-filepath"),
     pathModule = require("path"),
     shell = require("electron").shell,
-    spellchecker = require("spellchecker"),
+    // spellchecker = require("spellchecker"),
     cp = require("child_process");
 
 function AbrDocument () {
@@ -86,9 +86,9 @@ function AbrDocument () {
                     that.autopreviewTypes = config.autopreview;
 
                     // Spellchecker init
-                    if (config.spellchecker.active) {
-                        that.setDictionary(config.spellchecker.language, config.spellchecker.src);
-                    }
+                    // if (config.spellchecker.active) {
+                    //     that.setDictionary(config.spellchecker.language, config.spellchecker.src);
+                    // }
 
                     // Editor font-size
                     var fontSize = config.editor["font-size"] || "16px";
@@ -842,7 +842,7 @@ AbrDocument.prototype = {
     // Spellchecker
     setDictionary: function (lang, path) {
         if (lang) {
-            spellchecker.setDictionary(lang, path);
+            // spellchecker.setDictionary(lang, path);
             // Refresh CodeMirror highlight + enable spelling
             this.cm.setOption("mode", "abr-spellcheck-on");
             this.setConfig("spellchecker:active", true);

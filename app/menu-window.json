@@ -214,19 +214,7 @@
             {
                 "type": "separator"
             },
-            {
-                "labelKey": "menu-spelling",
-                "id": "spelling",
-                "submenu": [
-                    {
-                        "labelKey": "menu-spelling-disabled",
-                        "type": "radio",
-                        "checked": false,
-                        "command": "setDictionary",
-                        "parameters": false
-                    }
-                ]
-            },
+            
             {
                 "type": "separator"
             },

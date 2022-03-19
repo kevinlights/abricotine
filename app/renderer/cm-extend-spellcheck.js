@@ -17,7 +17,8 @@ function initSpellcheck (CodeMirror) {
         		token: function(stream, state) {
         			var ch = stream.peek(),
                         word = "",
-                        isMisspelledFunc = window.abrDoc.getSpellcheckFunc();
+                        // isMisspelledFunc = window.abrDoc.getSpellcheckFunc();
+                        isMisspelledFunc = false;
                     if (!isMisspelledFunc) {
                         return null;
                     }
